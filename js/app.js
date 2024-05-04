@@ -32,4 +32,24 @@ const downloadImage = () => {
    document.body.removeChild(link);
 }
 
+const uploadImage = () => {
+  const selectedFile = document.getElementById("uploadedImage").files[0];
+  if (selectedFile == undefined) {
+    window.alert("ur mom homo but not in a bad way just a homo way")
+  }
+  else {
+    var reader = new FileReader();
+    reader.onload = function(f) {
+       var data = f.target.result;
+       fabric.Image.fromURL(data, function(img) {
+          canvas.setBackgroundImage(img, canvas.renderAll.bind(canvas), {
+             scaleX: canvas.width / img.width,
+             scaleY: canvas.height / img.height
+          });
+       });
+    };
+    reader.readAsDataURL(selectedFile);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", initializeCanvas)
