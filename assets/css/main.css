@@ -15,7 +15,7 @@ html {
 }
 
 .friendlybox {
-    width: 60%;
+    width: 80%;
     min-width: 300px;
     height: 40%;
     min-height: 600px;
@@ -23,6 +23,75 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    align-items: center;  
+}
+
+.menuButton {
+    width: 300px;
+    height: 100px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.menuButtonImage {
+    width: 300px;
+    height: 100px;
+    border: none;
+    background: none;
+}
+
+.menuButton:hover {
+    transform: translate(0px, 5px);
+}
+
+.menuButton:active {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.chooseFileButton {
+    background: url(../uploadFile.PNG) no-repeat;
+    cursor:pointer;
+    width: 300px;
+    height: 100px;
+    border: none;
+}
+
+.chooseFileForm {
+    width: 300px;
+    aspect-ratio: 100%;
+}
+
+.imageMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     align-items: center;
-    
+}
+
+.imageItem {
+    margin: 8px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  cursor: pointer;
+  width: 300px;
+  height: 100px;
+  border: none;
+}
+
+.custom-file-upload:hover {
+    transform: translate(0px, 5px);
+}
+
+.custom-file-upload:active {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }

@@ -17,11 +17,30 @@
                 <canvas id="cowboyHatInator">
                 <img class="smallimg" src="./assets/hats/drawnHatRight.png" id="cowboy">
             </div>
-            <button onclick="downloadImage()">Download</button>
-            <button onclick="uploadImageToCanvasForHat()">Upload</button>
-            <form>
-                <input type="file" id="uploadedImage" accept="image/png image/jpg image/jpeg">
-            </form>
+            <div class="imageMenu">
+                <div class="imageItem">
+                    <form class="chooseFileForm">
+                        <label for="uploadedImage" class="custom-file-upload">
+                            <img src="./assets/uploadFile.png" class="menuButtonImage">
+                        </label>
+                        <input 
+                            type="file" 
+                            id="uploadedImage" 
+                            accept="image/png image/jpg image/jpeg"
+                        >
+                    </form>
+                </div>
+                <div class="imageItem">
+                    <button onclick="downloadImage()" class="menuButton">
+                        <img src="./assets/downloadcowboy.PNG" class="menuButtonImage">
+                    </button>
+                </div>
+                <div class="imageItem">
+                    <button onclick="flipImage()" class="menuButton">
+                        <img src="./assets/fliphat.PNG" class="menuButtonImage">
+                    </button>
+                </div>
+            </div>
         </div>
     </body>
 </html>
