@@ -32,7 +32,7 @@ const downloadImage = () => {
    document.body.removeChild(link);
 }
 
-const uploadImage = () => {
+const uploadImageToCanvasForHat = () => {
   const selectedFile = document.getElementById("uploadedImage").files[0];
   if (selectedFile == undefined) {
     window.alert("ur mom homo but not in a bad way just a homo way")
