@@ -2,8 +2,22 @@
 <html>
     <head>
         <title>Get This Man a Hat</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+        <script src="./js/app.js"></script>
+        <script src="./js/fabric.js"></script>
     </head>
     <body>
-        <h1>Get This Man a Hat</h1>
+        <div class="centeredDiv">
+            <img src="./assets/welcomesign.png">
+            <h3>A image generator to turn your lame image into a root'in toot'in cowboy</h3>
+            <div class="friendlybox">
+                <p>reeee cowboy</p>
+                <canvas id="cowboyHatInator">
+                <img class="smallimg" src="https://americanhatmakers.com/cdn/shop/products/cattleman-brown-felt-western-cowboy-hat-americanhatmakers-_3_e11bcbb8-ce6a-4db4-8146-4af7d0ab01ad.jpg" id="cowboy">
+            </div>
+            <button onclick="downloadImage()">clickme</button>
+        </div>
     </body>
 </html>

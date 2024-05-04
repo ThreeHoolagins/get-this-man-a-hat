@@ -1,0 +1,28 @@
+html {
+    background-image: url("../../assets/westernbackground.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.centeredDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.friendlybox {
+    width: 60%;
+    min-width: 300px;
+    height: 40%;
+    min-height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
